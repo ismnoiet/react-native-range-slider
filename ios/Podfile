@@ -1,0 +1,29 @@
+source 'https://github.com/CocoaPods/Specs.git'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+
+target 'RangeSlider' do
+
+  pod "Yoga", :path => "../../../node_modules/react-native/ReactCommon/yoga"
+  pod 'React', :path => '../../../node_modules/react-native', :subspecs => [
+      'Core',
+      'DevSupport' # <= ADD THIS LINE
+      # Add any other subspecs you want to use in your project
+  ]
+
+  pod "TTRangeSlider"
+
+  # important
+  # loop through the pods and remove react, to avoid duplicate symbols issue
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      if target.name == "React"
+        target.remove_from_project
+      end
+    end
+  end
+
+end
+
+

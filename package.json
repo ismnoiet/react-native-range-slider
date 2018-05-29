@@ -1,0 +1,45 @@
+{
+  "name": "react-native-range-slider",
+  "version": "0.0.1",
+  "description": "The native slider for react native with multiple markers",
+  "author": "ismnoiet <ismnoiet@gmail.com>",
+  "homepage": "https://github.com/ismnoiet/react-native-range-slider",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "slider",
+    "range",
+    "range-slider",
+    "react-component",
+    "react-native-component",
+    "react-native",
+    "ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ismnoiet/react-native-range-slider"
+  },
+  "bugs": {
+    "url": "git://github.com/ismnoiet/nodeschool-workshops-manager.git"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-react-native": "^3.1.0",
+    "prettier": "^1.8.2",
+    "prettier-eslint": "^8.2.1",
+    "react": "16.0.0",
+    "react-native": "^0.50.3"
+  },
+  "author": "",
+  "license": "MIT"
+}

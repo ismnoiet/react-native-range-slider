@@ -1,0 +1,1 @@
+../../../../../../../react-native/React/Modules/RCTDeviceInfo.h

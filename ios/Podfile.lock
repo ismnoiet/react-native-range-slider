@@ -1,0 +1,34 @@
+PODS:
+  - React/Core (0.48.4):
+    - Yoga (= 0.48.4.React)
+  - React/DevSupport (0.48.4):
+    - React/Core
+    - React/RCTWebSocket
+  - React/RCTBlob (0.48.4):
+    - React/Core
+  - React/RCTWebSocket (0.48.4):
+    - React/Core
+    - React/RCTBlob
+  - TTRangeSlider (1.0.6)
+  - Yoga (0.48.4.React)
+
+DEPENDENCIES:
+  - React/Core (from `../../../node_modules/react-native`)
+  - React/DevSupport (from `../../../node_modules/react-native`)
+  - TTRangeSlider
+  - Yoga (from `../../../node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: ../../../node_modules/react-native
+  Yoga:
+    :path: ../../../node_modules/react-native/ReactCommon/yoga
+
+SPEC CHECKSUMS:
+  React: 59267c3a5811102116842a84a29efaca58167ee8
+  TTRangeSlider: 78188bea83f6471a06f75adbc88da5e990baeafe
+  Yoga: de6cde41559145f06b816e2bab5bfa980447798b
+
+PODFILE CHECKSUM: f9529bceeba6a2cc72f2ba3552637029e1b95382
+
+COCOAPODS: 1.4.0
