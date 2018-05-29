@@ -27,7 +27,6 @@ import RangeSlider from 'react-native-range-slider'
 ```JSX
 <View style={{flex: 1, flexDirection: 'row'}}>
  <RangeSlider
-   exampleProp="awesome stuff"
    minValue={0}
    maxValue={100}
    selectedMinimum={20}
