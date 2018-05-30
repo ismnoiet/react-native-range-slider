@@ -10,7 +10,8 @@
 		043F1FDF20BDDACF00904784 /* RangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1FDE20BDDACF00904784 /* RangeSlider.m */; };
 		043F1FE020BDDACF00904784 /* RangeSlider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 043F1FDD20BDDACF00904784 /* RangeSlider.h */; };
 		043F1FE820BDDC3A00904784 /* RangeSliderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1FE720BDDC3A00904784 /* RangeSliderManager.m */; };
-		04812D2720BE0453001AECD5 /* libTTRangeSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04812D2620BE0453001AECD5 /* libTTRangeSlider.a */; };
+		04A774A420BE67A500539467 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A774A320BE67A500539467 /* TTRangeSlider.m */; };
+		04A774A620BE680600539467 /* TTRangeSliderDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 04A774A520BE680600539467 /* TTRangeSliderDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,11 +33,9 @@
 		043F1FDE20BDDACF00904784 /* RangeSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangeSlider.m; sourceTree = "<group>"; };
 		043F1FE620BDDBFC00904784 /* RangeSliderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeSliderManager.h; sourceTree = "<group>"; };
 		043F1FE720BDDC3A00904784 /* RangeSliderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangeSliderManager.m; sourceTree = "<group>"; };
-		043F202020BDDE8B00904784 /* libTTRangeSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTTRangeSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		04812D2620BE0453001AECD5 /* libTTRangeSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTTRangeSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FF034A37F5F4A0DAE28B3DA /* Pods-RangeSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RangeSlider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RangeSlider/Pods-RangeSlider.debug.xcconfig"; sourceTree = "<group>"; };
-		54F97DFF2487730E18361F06 /* libPods-RangeSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RangeSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		73955050D6ADD54B38460785 /* Pods-RangeSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RangeSlider.release.xcconfig"; path = "Pods/Target Support Files/Pods-RangeSlider/Pods-RangeSlider.release.xcconfig"; sourceTree = "<group>"; };
+		04A774A220BE677E00539467 /* TTRangeSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRangeSlider.h; sourceTree = "<group>"; };
+		04A774A320BE67A500539467 /* TTRangeSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRangeSlider.m; sourceTree = "<group>"; };
+		04A774A520BE680600539467 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04812D2720BE0453001AECD5 /* libTTRangeSlider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +52,11 @@
 		043F1FD120BDDACF00904784 = {
 			isa = PBXGroup;
 			children = (
+				04A774A520BE680600539467 /* TTRangeSliderDelegate.h */,
+				04A774A320BE67A500539467 /* TTRangeSlider.m */,
+				04A774A220BE677E00539467 /* TTRangeSlider.h */,
 				043F1FDC20BDDACF00904784 /* RangeSlider */,
 				043F1FDB20BDDACF00904784 /* Products */,
-				BFC880D376DF4AFBD577BEC7 /* Pods */,
 				5BCD13AA3588A358493C37FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -83,20 +83,8 @@
 		5BCD13AA3588A358493C37FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04812D2620BE0453001AECD5 /* libTTRangeSlider.a */,
-				54F97DFF2487730E18361F06 /* libPods-RangeSlider.a */,
-				043F202020BDDE8B00904784 /* libTTRangeSlider.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BFC880D376DF4AFBD577BEC7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3FF034A37F5F4A0DAE28B3DA /* Pods-RangeSlider.debug.xcconfig */,
-				73955050D6ADD54B38460785 /* Pods-RangeSlider.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,11 +94,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043F1FE320BDDACF00904784 /* Build configuration list for PBXNativeTarget "RangeSlider" */;
 			buildPhases = (
-				C55F867BFF1EA24A41958E8B /* [CP] Check Pods Manifest.lock */,
 				043F1FD620BDDACF00904784 /* Sources */,
 				043F1FD720BDDACF00904784 /* Frameworks */,
 				043F1FD820BDDACF00904784 /* CopyFiles */,
-				8DA2BE8C1499AAA75CA37EDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,39 +139,6 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8DA2BE8C1499AAA75CA37EDC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RangeSlider/Pods-RangeSlider-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C55F867BFF1EA24A41958E8B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RangeSlider-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				043F1FE820BDDC3A00904784 /* RangeSliderManager.m in Sources */,
+				04A774A620BE680600539467 /* TTRangeSliderDelegate.h in Sources */,
 				043F1FDF20BDDACF00904784 /* RangeSlider.m in Sources */,
+				04A774A420BE67A500539467 /* TTRangeSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -304,6 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -313,9 +270,9 @@
 		};
 		043F1FE420BDDACF00904784 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FF034A37F5F4A0DAE28B3DA /* Pods-RangeSlider.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -325,9 +282,9 @@
 		};
 		043F1FE520BDDACF00904784 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73955050D6ADD54B38460785 /* Pods-RangeSlider.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

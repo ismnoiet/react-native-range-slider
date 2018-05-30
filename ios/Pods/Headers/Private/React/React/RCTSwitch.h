@@ -1,1 +1,0 @@
-../../../../../../../react-native/React/Views/RCTSwitch.h

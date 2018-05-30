@@ -1,1 +1,0 @@
-../../../../../../../react-native/React/Base/RCTRootView.h
