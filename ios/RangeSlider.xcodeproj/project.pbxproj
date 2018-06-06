@@ -12,6 +12,7 @@
 		043F1FE820BDDC3A00904784 /* RangeSliderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F1FE720BDDC3A00904784 /* RangeSliderManager.m */; };
 		04A774A420BE67A500539467 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A774A320BE67A500539467 /* TTRangeSlider.m */; };
 		04A774A620BE680600539467 /* TTRangeSliderDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 04A774A520BE680600539467 /* TTRangeSliderDelegate.h */; };
+		04E3D59B20C873C400BCA5A9 /* UIColor+fromHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E3D59A20C873C400BCA5A9 /* UIColor+fromHex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		04A774A220BE677E00539467 /* TTRangeSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRangeSlider.h; sourceTree = "<group>"; };
 		04A774A320BE67A500539467 /* TTRangeSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRangeSlider.m; sourceTree = "<group>"; };
 		04A774A520BE680600539467 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRangeSliderDelegate.h; sourceTree = "<group>"; };
+		04E3D59920C873C400BCA5A9 /* UIColor+fromHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+fromHex.h"; sourceTree = "<group>"; };
+		04E3D59A20C873C400BCA5A9 /* UIColor+fromHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+fromHex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +55,7 @@
 		043F1FD120BDDACF00904784 = {
 			isa = PBXGroup;
 			children = (
-				04A774A520BE680600539467 /* TTRangeSliderDelegate.h */,
-				04A774A320BE67A500539467 /* TTRangeSlider.m */,
-				04A774A220BE677E00539467 /* TTRangeSlider.h */,
+				04E3D59820C8731F00BCA5A9 /* TTRangeSlider */,
 				043F1FDC20BDDACF00904784 /* RangeSlider */,
 				043F1FDB20BDDACF00904784 /* Products */,
 				5BCD13AA3588A358493C37FB /* Frameworks */,
@@ -76,8 +77,20 @@
 				043F1FE620BDDBFC00904784 /* RangeSliderManager.h */,
 				043F1FDD20BDDACF00904784 /* RangeSlider.h */,
 				043F1FDE20BDDACF00904784 /* RangeSlider.m */,
+				04E3D59920C873C400BCA5A9 /* UIColor+fromHex.h */,
+				04E3D59A20C873C400BCA5A9 /* UIColor+fromHex.m */,
 			);
 			path = RangeSlider;
+			sourceTree = "<group>";
+		};
+		04E3D59820C8731F00BCA5A9 /* TTRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				04A774A520BE680600539467 /* TTRangeSliderDelegate.h */,
+				04A774A320BE67A500539467 /* TTRangeSlider.m */,
+				04A774A220BE677E00539467 /* TTRangeSlider.h */,
+			);
+			name = TTRangeSlider;
 			sourceTree = "<group>";
 		};
 		5BCD13AA3588A358493C37FB /* Frameworks */ = {
@@ -138,9 +151,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		043F1FD620BDDACF00904784 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +159,7 @@
 				043F1FE820BDDC3A00904784 /* RangeSliderManager.m in Sources */,
 				04A774A620BE680600539467 /* TTRangeSliderDelegate.h in Sources */,
 				043F1FDF20BDDACF00904784 /* RangeSlider.m in Sources */,
+				04E3D59B20C873C400BCA5A9 /* UIColor+fromHex.m in Sources */,
 				04A774A420BE67A500539467 /* TTRangeSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

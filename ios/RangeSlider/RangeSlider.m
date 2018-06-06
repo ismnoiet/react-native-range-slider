@@ -12,6 +12,7 @@
 #import <React/UIView+React.h>
 #import <React/RCTConvert.h>
 
+#import "UIColor+fromHex.h"
 #import "TTRangeSlider.h"
 
 @implementation RangeSlider : UIView  {
@@ -35,7 +36,7 @@
 }
 
 - (void)logControlEvent:(TTRangeSlider *)sender {
-    NSLog(@"Min Value: %.0f Max Value: %.0f", sender.selectedMinimum, sender.selectedMaximum);
+    // NSLog(@"Min Value: %.0f Max Value: %.0f", sender.selectedMinimum, sender.selectedMaximum);
     _selectedMinimum = sender.selectedMinimum;
     _selectedMaximum = sender.selectedMaximum;
 
@@ -51,7 +52,7 @@
     // this if condition is needed to avoid setting a random value(content of memory)
     if(minValue != _minValue){
         _minValue = minValue;
-        NSLog(@"minValue set %f", minValue);
+        // NSLog(@"minValue set %f", minValue);
         [_rangeSlider setMinValue: minValue];
     }
 }
@@ -174,11 +175,11 @@
 }
 
 -(void)rangeSlider:(TTRangeSlider *)sender didChangeSelectedMinimumValue:(float)selectedMinimum andMaximumValue:(float)selectedMaximum{
-    NSLog(@"awesome awesome");
+
 }
 
 - (void)rangeSliderValueDidChange:(TTRangeSlider *)slider {
-    NSLog(@"%0.2f - %0.2f", slider.selectedMinimum, slider.selectedMaximum);
+    // NSLog(@"%0.2f - %0.2f", slider.selectedMinimum, slider.selectedMaximum);
 }
 
 - (void)layoutSubviews
