@@ -16,7 +16,6 @@
 @synthesize bridge = _bridge;
 
 // Export a native module
-// https://facebook.github.io/react-native/docs/native-modules-ios.html
 RCT_EXPORT_MODULE();
 
 // Return the native view that represents your React component
@@ -31,30 +30,19 @@ RCT_EXPORT_VIEW_PROPERTY(selectedMinimum, float)
 RCT_EXPORT_VIEW_PROPERTY(selectedMaximum, float)
 RCT_EXPORT_VIEW_PROPERTY(tintColor, NSString)
 RCT_EXPORT_VIEW_PROPERTY(onValueChange, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(tintColor, NSString);
+RCT_EXPORT_VIEW_PROPERTY(tintColorBetweenHandles, NSString);
+RCT_EXPORT_VIEW_PROPERTY(minLabelColour, NSString);
+RCT_EXPORT_VIEW_PROPERTY(maxLabelColour, NSString);
+RCT_EXPORT_VIEW_PROPERTY(handleColor, NSString);
+RCT_EXPORT_VIEW_PROPERTY(lineHeight, float);
+RCT_EXPORT_VIEW_PROPERTY(lineBorderWidth, float);
+RCT_EXPORT_VIEW_PROPERTY(lineBorderColor, NSString);
+RCT_EXPORT_VIEW_PROPERTY(preffix, NSString);
+RCT_EXPORT_VIEW_PROPERTY(suffix, NSString);
 
-// Export constants
-// https://facebook.github.io/react-native/releases/next/docs/native-modules-ios.html#exporting-constants
-- (NSDictionary *)constantsToExport
-{
-    return @{
-             @"EXAMPLE": @"example"
-             };
-}
-
-- (NSArray *) customDirectEventTypes {
-    return @[
-             @"onFrameChange",
-             @"onChange"
-             ];
-}
-
-// experiment with unneeded callback
-RCT_EXPORT_METHOD(getValues:(RCTResponseSenderBlock)callback)
-{
-    NSString *msg = @"Hi there";
-    callback(@[msg]);
-}
-
+// @todo
+// RCT_EXPORT_VIEW_PROPERTY(minLabelFont, NSString);
+// RCT_EXPORT_VIEW_PROPERTY(maxLabelFont, NSString);
+// RCT_EXPORT_VIEW_PROPERTY(labelPadding, float);
 @end
-
-

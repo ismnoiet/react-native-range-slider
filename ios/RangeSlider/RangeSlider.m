@@ -24,6 +24,8 @@
     float _maxValue;
     float _selectedMinimum;
     float _selectedMaximum;
+    NSString *myPrefix;
+    NSString *mySuffix;
 
 
     UIView *_childView;
@@ -72,7 +74,63 @@
     }
 }
 
-- (void)setTintColor:(NSString *)tintColor{
+- (void) setTintColor:(NSString *)tintColor
+{
+    UIColor *color = [UIColor colorwithHexString:tintColor alpha:1];
+    [_rangeSlider setTintColor:color];
+}
+- (void) setTintColorBetweenHandles:(NSString *)tintColorBetweenHandles
+{
+    UIColor *color = [UIColor colorwithHexString:tintColorBetweenHandles alpha:1];
+    [_rangeSlider setTintColorBetweenHandles:color];
+}
+- (void) setMinLabelColour:(NSString *)minLabelColour
+{
+    UIColor *color = [UIColor colorwithHexString:minLabelColour alpha:1];
+    [_rangeSlider setMinLabelColour:color];
+}
+- (void) setMaxLabelColour:(NSString *)maxLabelColour
+{
+    UIColor *color = [UIColor colorwithHexString:maxLabelColour alpha:1];
+    [_rangeSlider setMaxLabelColour:color];
+}
+- (void) setHandleColor:(NSString *)handleColor
+{
+    UIColor *color = [UIColor colorwithHexString:handleColor alpha:1];
+    [_rangeSlider setHandleColor:color];
+}
+- (void) setLineHeight:(float)lineHeight
+{
+    [_rangeSlider setLineHeight:lineHeight];
+}
+- (void) setLineBorderWidth:(float)lineBorderWidth{
+    [_rangeSlider setLineBorderWidth:lineBorderWidth];
+}
+- (void) setLineBorderColor:(NSString *)lineBorderColor{
+    UIColor *color = [UIColor colorwithHexString:lineBorderColor alpha:1];
+    [_rangeSlider setLineBorderColor:color];
+}
+- (void) setPreffix:(NSString *)preffix
+{
+    myPrefix = preffix;
+    NSNumberFormatter *customFormatter = [[NSNumberFormatter alloc] init];
+    customFormatter.positivePrefix = preffix;
+    if(mySuffix){
+        customFormatter.positiveSuffix = mySuffix;
+    }
+    // _rangeSlider.numberFormatterOverride = customFormatter;
+    [_rangeSlider setNumberFormatterOverride: customFormatter];
+}
+- (void) setSuffix:(NSString *)suffix{
+    mySuffix = suffix;
+    NSNumberFormatter *customFormatter = [[NSNumberFormatter alloc] init];
+    customFormatter.positiveSuffix = suffix;
+    if(myPrefix){
+        customFormatter.positivePrefix = myPrefix;
+    }
+
+    // _rangeSlider.numberFormatterOverride = customFormatter;
+    [_rangeSlider setNumberFormatterOverride: customFormatter];
 }
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
@@ -133,14 +191,6 @@
     // [_childView addSubview:_rangeSlider];
 
 }
-
-// export callback, not needed in this project
-RCT_EXPORT_METHOD(getValues:(RCTResponseSenderBlock)callback)
-{
-    NSString *msg = @"Hi there";
-    callback(@[msg]);
-}
-
 @end
 
 
