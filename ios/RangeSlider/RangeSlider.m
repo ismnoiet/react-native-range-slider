@@ -85,6 +85,13 @@
     UIColor *color = [UIColor colorwithHexString:tintColorBetweenHandles alpha:1];
     [_rangeSlider setTintColorBetweenHandles:color];
 }
+- (void) setHandleBorderColor:(NSString *)handleBorderColor{
+    UIColor *color = [UIColor colorwithHexString:handleBorderColor alpha:1];
+    [_rangeSlider setHandleBorderColor:color];
+}
+- (void) setHandleBorderWidth:(float)handleBorderWidth{
+    [_rangeSlider setHandleBorderWidth: handleBorderWidth];
+}
 - (void) setMinLabelColour:(NSString *)minLabelColour
 {
     UIColor *color = [UIColor colorwithHexString:minLabelColour alpha:1];

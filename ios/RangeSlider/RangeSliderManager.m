@@ -30,6 +30,8 @@ RCT_EXPORT_VIEW_PROPERTY(selectedMinimum, float)
 RCT_EXPORT_VIEW_PROPERTY(selectedMaximum, float)
 RCT_EXPORT_VIEW_PROPERTY(tintColor, NSString);
 RCT_EXPORT_VIEW_PROPERTY(tintColorBetweenHandles, NSString);
+RCT_EXPORT_VIEW_PROPERTY(handleBorderColor, NSString);
+RCT_EXPORT_VIEW_PROPERTY(handleBorderWidth, float);
 RCT_EXPORT_VIEW_PROPERTY(minLabelColour, NSString);
 RCT_EXPORT_VIEW_PROPERTY(maxLabelColour, NSString);
 RCT_EXPORT_VIEW_PROPERTY(handleColor, NSString);

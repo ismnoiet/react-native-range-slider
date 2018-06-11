@@ -15,6 +15,8 @@
 @property (nonatomic, assign) NSString* minLabelColour;
 @property (nonatomic, assign) NSString* maxLabelColour;
 @property (nonatomic, assign) NSString* handleColor;
+@property (nonatomic, assign) NSString* handleBorderColor;
+@property (nonatomic, assign) float handleBorderWidth;
 @property (nonatomic, assign) float lineHeight;
 @property (nonatomic, assign) float lineBorderWidth;
 @property (nonatomic, assign) NSString* lineBorderColor;

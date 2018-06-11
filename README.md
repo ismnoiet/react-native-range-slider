@@ -31,15 +31,17 @@ import RangeSlider from 'react-native-range-slider'
 
 ```JSX
 <View style={{flex: 1, flexDirection: 'row'}}>
- <RangeSlider
-   minValue={0}
-   maxValue={100}
-   tintColor={'#da0f22'}
-   selectedMinimum={20}
-   selectedMaximum={40}
-   style={{ flex: 1, height: 70, padding: 10, backgroundColor: '#ddd' }}
-   onChange={ (data)=>{ console.log(data);} }
- />
+  <RangeSlider
+    minValue={0}
+    maxValue={100}
+    tintColor={'#da0f22'}
+    handleBorderWidth={1}
+    handleBorderColor="#454d55"
+    selectedMinimum={20}
+    selectedMaximum={40}
+    style={{ flex: 1, height: 70, padding: 10, backgroundColor: '#ddd' }}
+    onChange={ (data)=>{ console.log(data);} }
+  />
 </View>
 ```
 ## API
@@ -52,10 +54,12 @@ import RangeSlider from 'react-native-range-slider'
 | selectedMaximum | the selected maximum value, it shouldn't be bigger than `maxValue`  |    Number(float) |
 | onChange | a callback that will be called with slider data once the values change   |    Callback |
 | tintColor | the color for the slider bar and the two handlers   |    String(**MUST BE A HEX VALUE**) |
+| handleColor | the color for both `selectedMinimum` and `selectedMaximum`  handlers |    String(**MUST BE A HEX VALUE**) |
+| handleBorderColor | the color for the slider handle border   |    String(**MUST BE A HEX VALUE**) |
+| handleBorderWidth | the width for the slider handle border   |    Number(float) |
 | tintColorBetweenHandles | the color of the slider bar between the `selectedMinimum` and `selectedMaximum` handlers   |    String(**MUST BE A HEX VALUE**) |
 | minLabelColour | the color of the min label on top of `selectedMinimum` handler |    String(**MUST BE A HEX VALUE**) |
 | maxLabelColour | the color of the max label on top of `selectedMaximum` handler |    String(**MUST BE A HEX VALUE**) |
-| handleColor | the color for both `selectedMinimum` and `selectedMaximum`  handlers |    String(**MUST BE A HEX VALUE**) |
 | lineHeight | the height for slider bar |    Number(float) |
 | preffix | the string to be prepended to min and max labels values  |    String |
 | suffix | the string to be appended to min and max labels values  |    String |
