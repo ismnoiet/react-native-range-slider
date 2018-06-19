@@ -25,7 +25,8 @@
 
 ## Usage
 
-If you want a working example you can check this [simple example](https://github.com/ismnoiet/react-native-range-slider-example)
+If you want a working example you can check this [simple example](https://github.com/ismnoiet/react-native-range-slider-example), otherwise you can use the following example as a starting point.
+
 ```javascript
 import RangeSlider from 'react-native-range-slider'
 ```
