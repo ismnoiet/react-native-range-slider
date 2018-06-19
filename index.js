@@ -4,6 +4,7 @@ import {
   requireNativeComponent,
   NativeModules,
 } from 'react-native'
+import PropTypes from 'prop-types';
 
 const MyRangeSlider = requireNativeComponent('RangeSlider', RangeSlider)
 
@@ -24,8 +25,8 @@ export default class RangeSlider extends Component {
 }
 
 RangeSlider.propTypes = {
-  minValue: React.PropTypes.number,
-  maxValue: React.PropTypes.number,
-  selectedMinimum: React.PropTypes.number,
-  selectedMaximum: React.PropTypes.number,
+  minValue: PropTypes.number,
+  maxValue: PropTypes.number,
+  selectedMinimum: PropTypes.number,
+  selectedMaximum: PropTypes.number,
 }

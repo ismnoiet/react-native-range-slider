@@ -21,10 +21,11 @@
 2. Link
    * Run `react-native link react-native-range-slider`
    * If linking fails, follow the
-     [manual linking steps](http://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
+     [manual linking steps](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
 
 ## Usage
 
+If you want a working example you can check this [simple example](https://github.com/ismnoiet/react-native-range-slider-example)
 ```javascript
 import RangeSlider from 'react-native-range-slider'
 ```
@@ -57,10 +58,11 @@ import RangeSlider from 'react-native-range-slider'
 | handleColor | the color for both `selectedMinimum` and `selectedMaximum`  handlers |    String(**MUST BE A HEX VALUE**) |
 | handleBorderColor | the color for the slider handle border   |    String(**MUST BE A HEX VALUE**) |
 | handleBorderWidth | the width for the slider handle border   |    Number(float) |
+| handleDiameter | the diameter for the slider handle   |    Number(float) default 16.0 |
 | tintColorBetweenHandles | the color of the slider bar between the `selectedMinimum` and `selectedMaximum` handlers   |    String(**MUST BE A HEX VALUE**) |
 | minLabelColour | the color of the min label on top of `selectedMinimum` handler |    String(**MUST BE A HEX VALUE**) |
 | maxLabelColour | the color of the max label on top of `selectedMaximum` handler |    String(**MUST BE A HEX VALUE**) |
-| lineHeight | the height for slider bar |    Number(float) |
+| lineHeight | the height for slider bar | Number(float) default 1.0) |
 | preffix | the string to be prepended to min and max labels values  |    String |
 | suffix | the string to be appended to min and max labels values  |    String |
 

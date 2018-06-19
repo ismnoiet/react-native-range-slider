@@ -140,6 +140,9 @@
     // _rangeSlider.numberFormatterOverride = customFormatter;
     [_rangeSlider setNumberFormatterOverride: customFormatter];
 }
+- (void) setHandleDiameter:(float)handleDiameter{
+    [_rangeSlider setHandleDiameter:handleDiameter];
+}
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {

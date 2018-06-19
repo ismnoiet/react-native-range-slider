@@ -16,12 +16,14 @@
 @property (nonatomic, assign) NSString* maxLabelColour;
 @property (nonatomic, assign) NSString* handleColor;
 @property (nonatomic, assign) NSString* handleBorderColor;
+@property (nonatomic, assign) float handleDiameter;
 @property (nonatomic, assign) float handleBorderWidth;
 @property (nonatomic, assign) float lineHeight;
 @property (nonatomic, assign) float lineBorderWidth;
 @property (nonatomic, assign) NSString* lineBorderColor;
 @property (nonatomic, assign) NSString* suffix;
 @property (nonatomic, assign) NSString* preffix;
+
 
 
 // Initializing with the event dispatcher allows us to communicate with JS
