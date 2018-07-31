@@ -1,8 +1,10 @@
 <h2 align="center">React Native Range Slider</h2>
 <p align="center">The high-quality native iOS range slider</a> for <a href="https://facebook.github.io/react-native/">react native.</a> A slider, similar in style to UISlider, but which allows you to pick a minimum and maximum range.
 
+<b>Note: This slider can also be used as a normal slider with only one handle.<br><br><br></b>
+
 <p align="center">
-  <img src="./demo.gif" width="300" border="1px"/>
+  <img src="./demo.gif" width="300" border="1px" style="margin-top: 50px"/>
 </p>
 
 <p align="center">
@@ -50,6 +52,7 @@ import RangeSlider from 'react-native-range-slider'
 
 | Property |      Description      |  Type  |
 |----------|:-------------:|----------|
+| disableRange |  when set to true, the slider will mimic a normal slider with only one handle and the slider value will be stored in selectedMaximum | Boolean, false by default |
 | minValue |  the minimum value for the slider | Number(float) |
 | maxValue |  the maximum value for the slider   |   Number(float) |
 | selectedMinimum | the selected minimum value, it shouldn't be less than `minValue`  |    Number(float) |
@@ -72,8 +75,8 @@ import RangeSlider from 'react-native-range-slider'
 
    - [x] Add possibility to update handlers related properties.
    - [x] Impliment other necessary methods.
-   - [ ] Improve the documentation.
-   - [ ] Make the module cooler.
+   - [x] Improve the documentation.
+   - [x] Make the module cooler.
 
 
 ## Acknowledgement
