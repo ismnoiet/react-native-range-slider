@@ -143,6 +143,9 @@
 - (void) setHandleDiameter:(float)handleDiameter{
     [_rangeSlider setHandleDiameter:handleDiameter];
 }
+- (void)setDisableRange:(BOOL)disableRange{
+    [_rangeSlider setDisableRange:disableRange];
+}
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {

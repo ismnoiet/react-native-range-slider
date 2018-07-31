@@ -23,6 +23,7 @@
 @property (nonatomic, assign) NSString* lineBorderColor;
 @property (nonatomic, assign) NSString* suffix;
 @property (nonatomic, assign) NSString* preffix;
+@property (nonatomic, assign) BOOL disableRange;
 
 
 
