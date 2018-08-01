@@ -2,6 +2,9 @@
 <p align="center">The high-quality native iOS range slider</a> for <a href="https://facebook.github.io/react-native/">react native.</a> A slider, similar in style to UISlider, but which allows you to pick a minimum and maximum range.
 
 <b>Note: This slider can also be used as a normal slider with only one handle.<br><br><br></b>
+<p align="center">
+  <a href="https://github.com/ismnoiet/example_RN_range_slider">Demo</a>
+</p>
 
 <p align="center">
   <img src="./demo.gif" width="300" border="1px" style="margin-top: 50px"/>
@@ -27,7 +30,7 @@
 
 ## Usage
 
-If you want a working example you can check this [simple example](https://github.com/ismnoiet/react-native-range-slider-example), otherwise you can use the following example as a starting point.
+If you want a working example you can check [this example](https://github.com/ismnoiet/example_RN_range_slider), otherwise you can use the following example as a starting point.
 
 ```javascript
 import RangeSlider from 'react-native-range-slider'
