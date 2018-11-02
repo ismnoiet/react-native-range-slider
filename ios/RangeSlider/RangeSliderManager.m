@@ -42,6 +42,7 @@ RCT_EXPORT_VIEW_PROPERTY(lineBorderColor, NSString);
 RCT_EXPORT_VIEW_PROPERTY(preffix, NSString);
 RCT_EXPORT_VIEW_PROPERTY(suffix, NSString);
 RCT_EXPORT_VIEW_PROPERTY(disableRange, BOOL);
+RCT_EXPORT_VIEW_PROPERTY(hideLabels, BOOL);
 
 // @todo
 // RCT_EXPORT_VIEW_PROPERTY(minLabelFont, NSString);

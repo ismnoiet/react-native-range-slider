@@ -72,6 +72,7 @@ import RangeSlider from 'react-native-range-slider'
 | lineHeight | the height for slider bar | Number(float) default 1.0) |
 | preffix | the string to be prepended to min and max labels values  |    String |
 | suffix | the string to be appended to min and max labels values  |    String |
+| hideLabels | a boolean to determine handle labels visibility, if set to true range labels will be hidden  |    Boolean |
 
 
 ## Todo
@@ -80,6 +81,7 @@ import RangeSlider from 'react-native-range-slider'
    - [x] Impliment other necessary methods.
    - [x] Improve the documentation.
    - [x] Make the module cooler.
+   - [ ] Add android support.
 
 
 ## Acknowledgement

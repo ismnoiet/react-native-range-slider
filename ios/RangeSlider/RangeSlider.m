@@ -146,6 +146,11 @@
 - (void)setDisableRange:(BOOL)disableRange{
     [_rangeSlider setDisableRange:disableRange];
 }
+- (void)setHideLabels:(BOOL)hideLabels{
+    if(hideLabels){
+        [_rangeSlider setHideLabels: YES];
+    }
+}
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {

@@ -24,6 +24,7 @@
 @property (nonatomic, assign) NSString* suffix;
 @property (nonatomic, assign) NSString* preffix;
 @property (nonatomic, assign) BOOL disableRange;
+@property (nonatomic, assign) BOOL hideLabels;
 
 
 
