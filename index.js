@@ -9,8 +9,14 @@ import PropTypes from 'prop-types';
 const MyRangeSlider = requireNativeComponent('RangeSlider', RangeSlider)
 
 export default class RangeSlider extends Component {
+  setNativeProps = (nativeProps) => {
+    // Forward setNativeProps to native component
+    this._root.setNativeProps(nativeProps);
+  }
+
   render () {
     return <MyRangeSlider
+      ref={component => this._root = component}
       {...this.props}
       onChange={(e)=>{
         // e.nativeEvents contains:
