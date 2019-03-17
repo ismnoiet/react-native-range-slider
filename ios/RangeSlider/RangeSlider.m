@@ -171,8 +171,8 @@
         _rangeSlider = [[TTRangeSlider alloc] initWithFrame:CGRectZero];
         _rangeSlider.minValue = _minValue ? _minValue:0;
         _rangeSlider.maxValue = _maxValue ? _maxValue:100;
-        _rangeSlider.selectedMinimum = _selectedMinimum? _selectedMinimum:20;
-        _rangeSlider.selectedMaximum = _selectedMaximum? _selectedMaximum:60;
+        _rangeSlider.selectedMinimum = _selectedMinimum;
+        _rangeSlider.selectedMaximum = _selectedMaximum;
 
         // _rangeSlider.minDistance = -1; // distance between selectedMin_selected_max
         // _rangeSlider.handleColor = [UIColor colorWithRed:0.23 green:0.75 blue:0.43 alpha:1.0];
