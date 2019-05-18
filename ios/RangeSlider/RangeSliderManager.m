@@ -44,8 +44,13 @@ RCT_EXPORT_VIEW_PROPERTY(suffix, NSString);
 RCT_EXPORT_VIEW_PROPERTY(disableRange, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(hideLabels, BOOL);
 
-// @todo
-// RCT_EXPORT_VIEW_PROPERTY(minLabelFont, NSString);
-// RCT_EXPORT_VIEW_PROPERTY(maxLabelFont, NSString);
-// RCT_EXPORT_VIEW_PROPERTY(labelPadding, float);
+RCT_EXPORT_VIEW_PROPERTY(minLabelFont, NSString);
+RCT_EXPORT_VIEW_PROPERTY(maxLabelFont, NSString);
+RCT_EXPORT_VIEW_PROPERTY(minLabelFontSize, float);
+RCT_EXPORT_VIEW_PROPERTY(maxLabelFontSize, float);
+RCT_EXPORT_VIEW_PROPERTY(labelPadding, float);
+RCT_EXPORT_VIEW_PROPERTY(step, float);
+RCT_EXPORT_VIEW_PROPERTY(minDistance, float);
+RCT_EXPORT_VIEW_PROPERTY(maxDistance, float);
+
 @end
