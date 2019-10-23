@@ -18,15 +18,25 @@
 
 ## Getting Started
 
-1. Installation
+### If React Native < `0.60`
 
-   * Using npm: `npm install --save react-native-range-slider`
-   * Using yarn: `yarn add react-native-range-slider`
-
-2. Link
+   * Install the module, `
+   npm install --save react-native-range-slider
+   `
    * Run `react-native link react-native-range-slider`
    * If linking fails, follow the
      [manual linking steps](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
+
+
+### If React Native >= `0.60`
+- to install the module, add the following code to your `package.json` file `"react-native-range-slider": "ismnoiet/react-native-range-slider#fix_rn_0.60"`
+- Link the module manually by following what is in the screenshot:
+
+<p align="center">
+  <img src="./rn0.60_screenshot.png"/ width="250">
+</p>
+- Add the folder `node_modules/react-native-range-slider/ios/RNRangeSlider`
+
 
 ## Usage
 
