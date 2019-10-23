@@ -18,6 +18,8 @@
 
 ## Getting Started
 
+### Important: If you're using React Native >= `0.60` then use [fix_rn_0.60](https://github.com/ismnoiet/react-native-range-slider/tree/fix_rn_0.60) branch.
+
 1. Installation
 
    * Using npm: `npm install --save react-native-range-slider`
