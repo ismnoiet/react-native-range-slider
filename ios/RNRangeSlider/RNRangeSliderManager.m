@@ -1,27 +1,17 @@
-#import <Foundation/Foundation.h>
-#import "RangeSlider.h"
-#import "RangeSliderManager.h"
+#import "RNRangeSliderManager.h"
+#import "RNRangeSlider.h"
 
-// import RCTBridge
-#if __has_include(<React/RCTBridge.h>)
 #import <React/RCTBridge.h>
-#elif __has_include("RCTBridge.h")
-#import "RCTBridge.h"
-#else
-#import "React/RCTBridge.h" // Required when used as a Pod in a Swift project
-#endif
 
-@implementation RangeSliderManager
+@implementation RNRangeSliderManager
 
 @synthesize bridge = _bridge;
 
-// Export a native module
-RCT_EXPORT_MODULE();
+RCT_EXPORT_MODULE(RangeSlider)
 
-// Return the native view that represents your React component
 - (UIView *)view
 {
-    return [[RangeSlider alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
+  return [[RNRangeSlider alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(minValue, float)
@@ -44,8 +34,5 @@ RCT_EXPORT_VIEW_PROPERTY(suffix, NSString);
 RCT_EXPORT_VIEW_PROPERTY(disableRange, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(hideLabels, BOOL);
 
-// @todo
-// RCT_EXPORT_VIEW_PROPERTY(minLabelFont, NSString);
-// RCT_EXPORT_VIEW_PROPERTY(maxLabelFont, NSString);
-// RCT_EXPORT_VIEW_PROPERTY(labelPadding, float);
 @end
+

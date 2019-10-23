@@ -1,9 +1,10 @@
-// import UIKit so you can subclass off UIView
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <React/RCTComponent.h>
 
 @class RCTEventDispatcher;
 
-@interface RangeSlider : UIView
+@interface RNRangeSlider : UIView
 // Define view properties here with @property
 @property (nonatomic, assign) float minValue;
 @property (nonatomic, assign) float maxValue;
@@ -26,11 +27,11 @@
 @property (nonatomic, assign) BOOL disableRange;
 @property (nonatomic, assign) BOOL hideLabels;
 
+@property (nonatomic, copy) RCTBubblingEventBlock onChange;
+
 
 
 // Initializing with the event dispatcher allows us to communicate with JS
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher NS_DESIGNATED_INITIALIZER;
 
 @end
-
-
