@@ -75,6 +75,12 @@ import RangeSlider from 'react-native-range-slider'
 | preffix | the string to be prepended to min and max labels values  |    String |
 | suffix | the string to be appended to min and max labels values  |    String |
 | hideLabels | a boolean to determine handle labels visibility, if set to true range labels will be hidden  |    Boolean |
+| step | controls the value of each step. E.g. if this value is 20, the control will snap to values 20,40,60...etc. Set this is you enable the enableStep property.  |    Number(float) |
+| minLabelFont | font applied to the min handle label  |    String |
+| maxLabelFont | font applied to the max handle label  |    String |
+| minLabelFontSize | size of the min handle label  |    String |
+| maxLabelFontSize | size of the max handle label  |    String |
+| labelPadding | size of padding below the handle label  |    Number(float) |
 
 
 ## Todo

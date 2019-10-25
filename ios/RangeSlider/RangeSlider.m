@@ -27,6 +27,9 @@
     float _selectedMaximum;
     NSString *myPrefix;
     NSString *mySuffix;
+    
+    float _minLabelFontSize;
+    float _maxLabelFontSize;
 
 
     UIView *_childView;
@@ -151,7 +154,43 @@
         [_rangeSlider setHideLabels: YES];
     }
 }
-
+- (void)setStep:(float)step {
+    [_rangeSlider enableStep];
+    [_rangeSlider setStep:step];
+}
+- (void)setMaxLabelFont:(NSString *)maxLabelFont {
+    float size = 14;
+    if (_maxLabelFontSize) {
+        size = _maxLabelFontSize;
+    }
+    UIFont *font = [UIFont fontWithName:maxLabelFont size:size];
+    [_rangeSlider setMaxLabelFont:font];
+}
+- (void)setMinLabelFont:(NSString *)minLabelFont {
+    float size = 14;
+    if (_minLabelFontSize) {
+        size = _minLabelFontSize;
+    }
+    UIFont *font = [UIFont fontWithName:minLabelFont size:size];
+    [_rangeSlider setMinLabelFont:font];
+}
+- (void)setLabelPadding:(float)labelPadding {
+    [_rangeSlider setLabelPadding:labelPadding];
+}
+- (void)setMaxLabelFontSize:(float)maxLabelFontSize {
+    _maxLabelFontSize = maxLabelFontSize;
+    [_rangeSlider setMaxLabelFont:[_rangeSlider.maxLabelFont fontWithSize:_maxLabelFontSize]];
+}
+- (void)setMinLabelFontSize:(float)minLabelFontSize {
+    _minLabelFontSize = minLabelFontSize;
+    [_rangeSlider setMinLabelFont:[_rangeSlider.minLabelFont fontWithSize:_minLabelFontSize]];
+}
+- (void)setMinDistance:(float)minDistance {
+    [_rangeSlider setMinDistance:minDistance];
+}
+- (void)setMaxDistance:(float)maxDistance {
+    [_rangeSlider setMaxDistance:maxDistance];
+}
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {
     if ((self = [super init])) {
